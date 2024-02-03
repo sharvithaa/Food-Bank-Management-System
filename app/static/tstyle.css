@@ -1,0 +1,169 @@
+
+.container{ 
+   margin-top: 60px;    
+}
+/*.formbox{
+  width: 40%;
+  margin-left: 390px;
+  /*border:0px solid black;
+  border-radius: 10px;
+}*/
+form {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left:300px;
+  padding-right: 300px;
+  height: 100%;
+  text-align: center;
+}
+input{
+  background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+button{
+    background-color:black;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: .5px solid black;
+    width: 20%;
+    
+}
+
+.radio input{
+    transform: scale(1.5);
+
+}
+button:hover{
+    background-color:gray;
+}
+.regform .signin-up{
+    font-size: 20px; 
+    text-align: center;
+}
+.password{
+  position: relative;
+}
+.password input{
+  width:100%;
+  font-size:20px;
+  border:.5px solid #63707E;
+  
+  border-radius: 6px;
+  padding:14px 15px;
+  box-sizing:border-box;
+  margin:5px 0px 15px;
+  color:black;
+  
+}
+.fa-eye-slash{
+  position:absolute;
+  top:28%;
+  right: 4%;
+  /* font-size: 48px; */
+  cursor: pointer;
+
+}
+.bi{
+  position:absolute;
+  top:28%;
+  right: 4%;
+  /* font-size: 48px; */
+  cursor: pointer;
+
+}
+
+.image-radio-group input[type="radio"] {
+    display: none;
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+  }
+  .image-radio-group label {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .image-radio-group label img {
+    border: 2px solid transparent;
+  }
+  .image-radio-group input[type="radio"]:checked + label img {
+    border-color:rgb(46, 44, 44);
+    border-radius: 10px;
+    /* background-color:rgb(29, 109, 248); */
+  }
+  
+  .image-radio-group img{
+    width: 218px;
+    /* height: 120px; */
+    align-items:center;
+    
+
+    
+  }
+/*  */
+  /* .input #email{
+    display: block;
+    width: 200px;
+  }
+  .input #phoneno{
+    width: 200px;
+    display: block;
+  } */
+
+
+
+@media (max-width: 767px) {
+    .regform{ 
+    
+        width: 300px;
+        background-color:white;
+
+    
+        margin: 40px auto ;
+        color:black;
+        padding: 20px 20px 20px 20px;
+        font-size: 15px;
+        /* border-radius: 30px ; */
+        /* border: 1px solid black; */
+        
+    }
+    .logo{
+        text-align: center;
+        font-size: 18px;
+        color:black;
+      }
+      #heading{
+        margin-top:0;
+        color:black;
+        text-align: center;
+        font-size: 22px;
+        
+    }
+    button{
+      font-size: 16px;
+    }
+    .input input{
+        font-size: 16px;
+    }
+    .radio input{
+        transform: scale(1.1);
+    }
+    .image-radio-group img{
+        width: 300px;
+      }
+
+  select option{
+    width: 100%;
+    border-radius: 20px;
+    background-color: purple;
+  }
+}
+

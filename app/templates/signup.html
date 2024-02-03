@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="{% static 'style.css'%}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+<div class="container" id="container">
+<div class="form-container log-in-container">
+<form method="post">
+<h1>Signup</h1>
+<div class="social-container">
+<a href="https://youtu.be/k_4W9WhoOjI?si=DtqAQxcR4J-V8G7v" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+</div>
+<span></span>
+{% csrf_token %}
+<input type="text" placeholder="Username" name="{{form.username.name}}" id="{{form.username.id_for_label}}" />
+<input type="email" placeholder="Email" name="{{form.email.name}}" id="{{form.email.id_for_label}}"  />
+<input type="password" placeholder="Password" name="{{form.password.name}}" id="{{form.password.id_for_label}}" />
+<label for="user-type">Select User Type:</label>
+            <select name="{{ form.usertype.name }}" id="{{ form.usertype.label_tag }}">
+                <option value="volunteer">Volunteer</option>
+                <option value="donar">Donar</option>
+                <option value="ngo">NGO's</option>
+            </select><br><br>
+<button>Sign Up</button>
+
+<a href="#">Already have account?Login Here</a>
+</div>
+
+<div class="overlay-container">
+<div class="overlay">
+<div class="overlay-panel overlay-right">
+<img src="{% static 'images/campaign-main.jpg'%}" width="140%" height="100%" >
+<!--<h1>login to our page and Be the first to hands on special offers!</h1>-->
+</div>
+</div>
+</div>
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodBank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
+    <script src="main.js"></script>
+    <style>
+      .btn{
+        background-color: #800080;
+        color: white;
+        
+      }
+      .btn:hover{
+        background-color:black;
+        color: white;
+      }
+      .bg-image{
+    width: 100%; 
+    height: 600px; 
+    background-image: linear-gradient(  rgba(94, 94, 94, 0.4), rgba(174, 171, 171, 0.4)),url("{% static 'images/medium-shot-volunteers-with-food-donations.jpg' %}");
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+}
+      .navbar-custom{
+    background:white;
+  }
+  .color-me{
+    color:black!important;
+    font-weight: bold !important;
+}
+
+.header {
+  /* background-color: #f1f1f1; */
+  padding: 30px;
+  text-align: center;
+  background-image: url("pic7.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container-fluid .btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:orange;
+  color: white;
+  font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+}
+.container-fluid .btn:hover {
+  background-color: black;
+}
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+  }  
+  input[type="submit"] {
+    width: 40%;
+    background-color:#800080;
+    color: white;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }  
+  input[type="submit"]:hover {
+    background-color:#bc66bc;
+  }
+</style>
+</head>
+<body style="font-family: sans-serif;">  
+  <div class="bg-image">
+    <div class="text">
+       <p style="color:rgb(35, 34, 34);padding-top: 270px;padding-left: 750px;font-size: 30px;font-weight: 600;font-family:monospace;">LOVE EVERYONE FEED EVERYONE</p>
+       <a href="donate"><button style="margin-top: 20px;margin-left: 920px;" class="btn btn-lg">Donate</button></a>
+    </div>
+</div>
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><span style="font-family:sans-serif;color:black;font-size: 25px;font-weight: 700;">Food</span><span style="font-family:sans-serif;color:#800080;font-size: 25px;font-weight: 700;">Bank</span></a>
+            </div>
+        <div class="navbar-right">
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="nav navbar-nav">
+                    <li  class="nav-item" ><a class="color-me" class="nav-link-active" href="homepage.html">HOME</a></li>
+                    <li ><a class="color-me" href="#about" >ABOUT</a></li>
+                    <li ><a class="color-me" href="#contact">CONTACT</a></li>
+                    <li ><a class="color-me" href="login"><img src="{% static 'images/login (1).png' %}" width="30px" height="28px" style="align-items: center;"></a></li>
+               </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+     <h1 style="text-align: center;font-size: 28px; font-weight: bolder;margin-top:50px;">Feeding hungry in need every day</h1><br><br>
+     <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="{% static 'images/Food-crisis-1280x720.jpg' %}" alt="Hungry" width="400px" height="500px">
+            <div class="caption">
+              <h2 style="font-size: 20px; text-align: center; font-weight: bolder; color: rgb(244, 37, 78);">Hunger Crisis</h2>
+              <p style="font-size: 16px;text-align: justify;"> India ranks 107th out of 121 countries in the GHI 2022 rankings. With a score of 29.1, India has a level of hunger that is serious.More than 2 million households have run out of food in the last year.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="{% static 'images/image2.jpg'%}" alt="Nature" width="330px" height="400px">
+            <div class="caption">
+              <h2 style="font-size: 20px;text-align: center; font-weight: bolder; color: rgb(244, 37, 78);">Causes</h2>
+              <p style="font-size: 16px;text-align: justify;">The unequal distribution of income and lack of resources in developing countries.Millions of people simply cannot afford the land or farming supplies they need to grow, or otherwise gain access to nutritious food.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="{% static 'images/istockphoto-1299977349-612x612.jpg'%}" alt="Fjords" width="300px" height="400px">
+            <div class="caption">
+              <h2 style="font-size: 20px; text-align: center; font-weight: bolder; color: rgb(244, 37, 78);">Solution</h2>
+              <p style="font-size: 16px;text-align: justify;">Use of latest agricultural machines to save time and labour.Early maturing variety of crops can be that farmers can grow more crops in one land.Use of disease and pest resistant variety of crops to increase production.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div>
+  <h3 style="text-align: center;font-weight: 700;color: #800080;">ABOUT US</h3>
+  <p style="font-size: 16px;padding-left: 80px;text-align: justify;padding-right: 80px;padding-top: 10px;font-family:Verdana, Geneva, Tahoma, sans-serif;">At <span style="font-family:sans-serif;color:black;font-size: 20px;font-weight: 700;">Food</span><span style="font-family:sans-serif;color:#800080;font-size: 20px;font-weight: 700;">Bank</span> we are dedicated to alleviating hunger and nourishing our community. Our organization has been steadfast in its mission to provide food assistance to those in need. We believe that no one should go to bed hungry, and we work tirelessly to make that belief a reality.
+    To eradicate hunger and food insecurity in our community. We envision a future where every individual has access to nutritious meals and the opportunity to thrive. To achieve this vision, we are committed to providing food resources, fostering community partnerships, and empowering individuals and families to lead healthier, more sustainable lives.We are a non-profit organization that works tirelessly to collect, store, and distribute food to those who need it most.Over the years, we have made a significant impact on the lives of countless individuals. Our dedicated team of staff and volunteers have distributed millions of pounds of food to local food pantries, shelters, and directly to families in need. We've also implemented various programs to address the root causes of hunger and provide educational resources on nutrition and healthy eating.</p>
+</div>
+
+<div style="margin-top:60px;padding-top: 20px;background-color:gainsboro;">
+  <h3 style="text-align: center;font-weight: 700;margin-top: 20px;color: #800080;">CONTACT</h3>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="flex: 1;">
+      <p style="font-size: 16px;padding-left: 60px;text-align: justify;padding-top: 10px;">We'd love to hear from you! If you have any questions, feedback, or ideas to share, please don't hesitate to get in touch. Thank you for visiting <span style="font-family:sans-serif;color:black;font-size: 20px;font-weight: 700;">Food</span><span style="font-family:sans-serif;color:#800080;font-size: 20px;font-weight: 700;">Bank</span> and for being a part of our mission to end hunger in our community. Together, we can make a significant impact and create a hunger-free future for all.</p>
+    </div>
+    <div class="contact-form" style="flex: 1; padding-left:0px;padding-bottom:10px;">
+      <form action="feedback.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="message">Message:</label><textarea id="message" name="message" rows="5" cols="60"></textarea>
+        <br>
+        <input type="submit" value="Send" name="send">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
